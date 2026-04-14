@@ -2,6 +2,10 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+## Comportamento do Claude Code
+
+- Respostas sucintas: reportar apenas o que foi alterado, testado ou implementado — sem narrar etapas intermediárias
+
 ## Comandos Comuns
 
 ```bash
