@@ -1,9 +1,11 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using ModuloCadastro.DTO.API;
-using ModuloCadastro.Service;
+using ModuloCadastro.Service.Cadastro.Usuario;
 
-namespace API_simples.Controllers
+namespace API_simples.Controllers.Usuario
 {
+    [Authorize]
     [ApiController]
     [Route(template: "v1")]
     public class UsuarioController : ControllerBase

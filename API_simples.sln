@@ -10,6 +10,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API_simples", "API_simples.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModuloCadastro", "..\ERP_simples\ModuloCadastro\ModuloCadastro.csproj", "{81AA0756-3FF5-D457-1465-2E7C06DB051B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModuloConfiguracoes", "..\ERP_simples\Configuracoes\ModuloConfiguracoes.csproj", "{33C14D8D-1034-5829-BB70-7EB5648FD579}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,6 +26,10 @@ Global
 		{81AA0756-3FF5-D457-1465-2E7C06DB051B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{81AA0756-3FF5-D457-1465-2E7C06DB051B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{81AA0756-3FF5-D457-1465-2E7C06DB051B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33C14D8D-1034-5829-BB70-7EB5648FD579}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33C14D8D-1034-5829-BB70-7EB5648FD579}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33C14D8D-1034-5829-BB70-7EB5648FD579}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33C14D8D-1034-5829-BB70-7EB5648FD579}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
