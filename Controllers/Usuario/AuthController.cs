@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Options;
 using ModuloCadastro.Entity.Cadastro.Usuario;
 using ModuloCadastro.Service.Cadastro.Usuario;
 
@@ -13,10 +14,10 @@ public class AuthController : ControllerBase
     private readonly UsuarioService _service;
     private readonly JwtOptions _jwt;
 
-    public AuthController(JwtOptions options, UsuarioService service)
+    public AuthController(IOptions<JwtOptions> options, UsuarioService service)
     {
         _service = service;
-        _jwt = options;
+        _jwt = options.Value;
     }
 
     [HttpPost("login")]

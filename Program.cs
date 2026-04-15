@@ -8,6 +8,7 @@ using ModuloCadastro.Service;
 using ModuloCadastro.Service.Cadastro.Usuario;
 
 var builder = WebApplication.CreateBuilder(args);
+builder.Configuration.AddEnvironmentVariables();
 builder.Services.Configure<JwtOptions>(builder.Configuration.GetSection("Jwt"));
 
 var jwtOptions = builder.Configuration.GetSection("Jwt").Get<JwtOptions>();
