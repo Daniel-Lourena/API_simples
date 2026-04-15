@@ -1,4 +1,7 @@
 {
+  "env": {
+    "CLAUDE_CODE_DISABLE_ADAPTIVE_THINKING": "1"
+  },
   "permissions": {
     "allow": [
       "Bash(find /c/API_simples -type d -not -path */bin/* -not -path */obj/* -not -path */.vs/* -not -path */.git/*)"
