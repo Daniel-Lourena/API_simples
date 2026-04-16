@@ -27,6 +27,8 @@ namespace API_simples.Services
             var handlerJWT = new JwtSecurityTokenHandler();
             var token = handlerJWT.CreateToken(new SecurityTokenDescriptor()
             {
+                Issuer = _jwt.Issuer,
+                Audience = _jwt.Audience,
                 Subject = new ClaimsIdentity(GerarClaims(usuario)),
                 SigningCredentials = credenciais,
                 Expires = DateTime.UtcNow.AddHours(1),
